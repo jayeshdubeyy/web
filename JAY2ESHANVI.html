@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR ESHANVI</title>
+    <style>
+        body {
+            font-family: Brush Script MT, cursive;
+            background-color: rgba(0, 0, 0, 0.8); /* faded black background */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* white text */
+            text-align: center;
+        }
+        h1 {
+            color: red; /* red heading */
+        }
+        h2 {
+            color: red; /* red heading */
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* white shadow */
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff; /* white border */
+            background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white background */
+            color: #fff; /* white text */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff; /* blue button */
+            color: #fff; /* white text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3; /* darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jay to Esh🎀</h1>
+        <p>Please enter the password to see the message from Jay:</p>
+        <input type="password" id="passwordInput">
+        <button onclick="revealMessage()">Enter</button>
+        <div id="secretMessage" style="display: none;"
+               <h2> JAY is head over heels for ESh🎀<h2>
+          <p>ESH! I LOVE YOU♥ ik you love me 1000x more, not just my name but my whole life was incomplete without esh, now that ive found you ill make sure i give you what you deserve and ill love you to the moon and back.
+             Babygirl you light up my world like a thousand stars in the night sky. You are a beautiful blend of kindness, intelligence, and grace, making every moment spent with you an absolute delight.
+             I am truly grateful for having you in my life, and I promise to cherish each day together, hand in hand, as we create memories that will last a lifetime. I love you more than words can express♥🎀</p>
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            var password = document.getElementById("passwordInput").value;
+            if (password === "jaylovesesh") {
+                document.getElementById("secretMessage").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
